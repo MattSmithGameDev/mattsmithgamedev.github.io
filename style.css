@@ -5,7 +5,7 @@ body{
     margin: 0;
 }
 
-p, h1, h2{
+a, p, h1, h2{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,7 +14,11 @@ p, h1, h2{
     flex-wrap: wrap;
     flex-direction: row;
     padding: 0.5rem 0;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.item .container{
+    flex-wrap: nowrap;
 }
 
 .item{
@@ -23,9 +27,11 @@ p, h1, h2{
     padding: 0.25rem 0.5rem;
     background-color: rgb(221, 221, 221);
     color: rgb(23, 23, 24);
+    border: 2px solid rgb(214, 214, 214);
     width: 30rem;
     height: auto;
     border-radius: 1rem;
+    align-items: center;
 }
 
 .item h1, h2{
@@ -52,9 +58,18 @@ header .title{
     margin: 0 1rem;
 }
 
-.text-area p{
+main .text-area p{
     padding: 0 2.5rem;
     text-align: center;
+}
+
+main .text-area{
+    text-align: center;
+}
+
+.item .text-area{
+    text-align: left;
+    margin-top: 0;
 }
 
 main{
@@ -65,4 +80,12 @@ main{
 main h1{
     margin: 0 auto;
     text-align: center;
+}
+
+.item img{
+    width: 100%;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
